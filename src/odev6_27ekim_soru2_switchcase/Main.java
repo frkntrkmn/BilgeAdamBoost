@@ -78,18 +78,7 @@ public class Main {
 			System.out.println("belirtilen disinda giris yaptiniz!!!");
 			
 		}
-		}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+		}	
 	
 	
 	}
