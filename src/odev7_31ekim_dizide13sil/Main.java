@@ -6,6 +6,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner src = new Scanner(System.in);
+		
 		int toplam = 0, sayi;
 
 		System.out.println("dizi uzunluğu giriniz:");
@@ -22,25 +23,20 @@ public class Main {
 		int j = 0;
 		int ilkIndex[] = new int[1];
 		ilkIndex[0] = dizi[0];
-
+		
 		for (int i = 0; i < dizi.length;) {
 
 			while (j == 0) {
 				if (ilkIndex[j] == 13) {
-
 					i += 2;
-
 					j++;
 				} else if (ilkIndex[j] != 13) {
-
 					toplam += dizi[0];
-
 					i++;
-
 					j++;
 				}
 			}
-
+			
 			if (dizi[i] == 13 || dizi[i - 1] == 13) {
 				i++;
 			} else {
@@ -49,7 +45,6 @@ public class Main {
 			}
 
 		}
-
 		System.out.println(toplam);
 	}
 
