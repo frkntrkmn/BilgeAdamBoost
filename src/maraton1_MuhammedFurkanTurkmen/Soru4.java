@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Soru4 {
 
 	// tüm methodlarda ortak olması için class seviyesinde tanımladık ve
-	// dğer methodlarda kullanabilmek için static yaptık
+	// dğer methodlarda kullanabilmek için static yaptık.
 	static double sonuc;
 	static Scanner src = new Scanner(System.in);
 
