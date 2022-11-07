@@ -16,9 +16,14 @@ public class Soru4 {
 		// en az bir kere girmesi için do-while ile yaptık
 		do {
 			sonuc = 0;
-			System.out.println("hangi islemi yapmak istersiniz: \n" + "1. Kare alan hesaplama\n"
-					+ "2. Kare çevre hesaplama\n" + "3. Dikdörtgen alan hesaplama\n" + "4. Dikdörtgen çevre hesaplama\n"
-					+ "5. Daire alan hesaplama\n" + "6. Daire Çevre hesaplama\n" + "7. Çıkış");
+			System.out.println("hangi islemi yapmak istersiniz: \n" 
+			+ "1. Kare alan hesaplama\n"		
+			+ "2. Kare çevre hesaplama\n" 
+			+ "3. Dikdörtgen alan hesaplama\n" 
+			+ "4. Dikdörtgen çevre hesaplama\n"
+			+ "5. Daire alan hesaplama\n" 
+			+ "6. Daire Çevre hesaplama\n" 
+			+ "7. Çıkış");
 
 			islem = src.nextInt();
 
