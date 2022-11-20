@@ -9,6 +9,9 @@ public class Main {
 		televizyonManager.menu();
 		
 		
+		
+		
+		
 		/*	System.out.println("***MENU****");
 		System.out.println(
 				"0- Çıkış \n" + 

@@ -1,6 +1,5 @@
 package odev9_17kasım_televizyon.entity;
 
-import java.util.List;
 
 public class Kanal {
 	
@@ -36,7 +35,7 @@ public class Kanal {
 		return kanalAdi;
 	}
 	public void setKanalAdi(String kanalAdi) {
-		kanalAdi = kanalAdi;
+		this.kanalAdi = kanalAdi;
 	}
 	
 	
