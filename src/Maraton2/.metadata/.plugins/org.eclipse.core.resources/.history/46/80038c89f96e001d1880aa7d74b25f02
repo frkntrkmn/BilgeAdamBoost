@@ -1,0 +1,29 @@
+package maraton2.soru3;
+
+public class Yılan extends Surungen{
+
+	
+	
+	
+	
+	public Yılan() {
+		super();
+	}
+
+	public Yılan(String ad, int kilo, int uzunluk, boolean tehlikeliMi) {
+		super(ad, kilo, uzunluk, tehlikeliMi=true);
+	}
+
+	@Override
+	public void surun() {
+		System.out.println("yilan surundu");
+		
+	}
+
+	@Override
+	public void sesCikar() {
+		System.out.println("yilan tisladi");
+		
+	}
+
+}

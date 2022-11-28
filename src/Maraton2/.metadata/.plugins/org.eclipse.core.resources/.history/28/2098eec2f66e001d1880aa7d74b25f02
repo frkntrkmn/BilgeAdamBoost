@@ -1,0 +1,7 @@
+package maraton2.soru3;
+
+public abstract class MemeliHayvan extends Hayvan {
+
+
+	public abstract void yuru();
+}

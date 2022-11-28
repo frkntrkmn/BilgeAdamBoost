@@ -1,0 +1,80 @@
+package maraton2.soru3;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+public class HayvanatBahcesi {
+	
+	public static HashMap<Hayvan, String> hayvanlar =new HashMap<>();
+	
+	  List<Hayvan> list = new ArrayList(hayvanlar.keySet());
+		
+	  Map<String, Integer> adList = list.stream().collect(Collectors.toMap(a -> a.getAd(), a -> a.getKilo()));
+	  
+	public void bahceyeMemeliHayvanEkle(MemeliHayvan m) {
+		
+	
+		
+        
+		if(adList.containsKey(m.getAd())) {
+			
+			System.out.println("bu memeliden var zaten");
+			
+		}else {
+			hayvanlar.put(m, "memeli");
+		}
+	}
+	
+	
+	public void bahceyeSurungenEkle(Surungen s) {
+
+		
+		if(adList.containsKey(s.getAd())) {
+			
+			System.out.println("surungen zaten var");
+			
+			
+		}else {
+			hayvanlar.put(s, "surungen");
+
+		}
+
+	}
+	
+	
+	public void hayvanSesCikarsin(Hayvan h) {
+		
+	}
+	
+	public void hayvaninCinsiniBul(String hayvanAdi) {
+		
+	}
+	
+	public void hayvaninBilgileriniYazdir(String hayvanAdi){
+		  List<Hayvan> list = new ArrayList(hayvanlar.keySet());
+			
+		  Map<String, Integer> adList = list.stream().collect(Collectors.toMap(a -> a.getAd(), a -> a.getKilo()));
+		
+		
+		if(adList.containsKey(hayvanAdi)) {
+		
+			for (Map.Entry<Hayvan, String> entry : HayvanatBahcesi.hayvanlar.entrySet()) {
+			
+				Hayvan key = entry.getKey();
+			
+				String val = entry.getValue();
+			
+				System.out.println(entry.getKey()+" "+ entry.getValue());
+			
+		}
+		}
+	}
+	
+	public void hayvaniHareketEttir(String hayvanAdi) {
+		
+	}
+
+}

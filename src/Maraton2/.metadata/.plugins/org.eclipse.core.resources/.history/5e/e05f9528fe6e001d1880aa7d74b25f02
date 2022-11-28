@@ -1,0 +1,28 @@
+package maraton2.soru3;
+
+import java.util.Map;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Surungen yilans= new Yılan("kobra", 14, 3 );
+		Surungen yilans2= new Yılan("kobra", 1114, 3 );
+
+		HayvanatBahcesi bahce= new HayvanatBahcesi();
+		bahce.bahceyeSurungenEkle(yilans);
+		bahce.bahceyeSurungenEkle(yilans2);
+		
+	
+		for (Map.Entry<Hayvan, String> entry : HayvanatBahcesi.hayvanlar.entrySet()) {
+			Hayvan key = entry.getKey();
+			String val = entry.getValue();
+			System.out.println(entry.getKey()+" "+ entry.getValue());
+			
+		}
+		
+		
+	}
+
+	
+}

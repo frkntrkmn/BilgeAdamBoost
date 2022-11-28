@@ -1,0 +1,12 @@
+package maraton2.soru3;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Surungen yilans= new Yılan("kobra", 14, 3 );
+		HayvanatBahcesi bahce= new HayvanatBahcesi();
+		bahce.bahceyeSurungenEkle(yilans);
+	}
+
+}

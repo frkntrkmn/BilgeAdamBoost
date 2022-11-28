@@ -1,0 +1,11 @@
+package maraton2.soru3;
+
+import java.util.HashMap;
+import java.util.List;
+
+public class Db {
+	
+	HashMap<List, String> hayvanlar =new HashMap<>();
+
+
+}

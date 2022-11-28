@@ -1,0 +1,10 @@
+package maraton2.soru3;
+
+public class Kertenkele extends Surungen {
+
+	@Override
+	public void surun() {
+		
+	}
+
+}

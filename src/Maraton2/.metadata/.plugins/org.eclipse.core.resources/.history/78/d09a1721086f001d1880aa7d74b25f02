@@ -1,0 +1,23 @@
+package maraton2.soru3;
+
+import java.util.Map;
+
+public class Main {
+
+	public static void main(String[] args) {
+		HayvanatBahcesi bahce= new HayvanatBahcesi();
+
+		Surungen yilans= new Yılan("kobra", 14, 3 );
+		Surungen yilans2= new Yılan("kobra", 1114, 3 );
+
+		bahce.bahceyeSurungenEkle(yilans);
+		bahce.bahceyeSurungenEkle(yilans2);
+		
+		bahce.hayvaninBilgileriniYazdir("kobra");
+	
+		
+		
+	}
+
+	
+}

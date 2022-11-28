@@ -1,0 +1,96 @@
+package maraton2.soru4;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class EkonomiYolcu  extends Yolcu{
+	private int EKONOMIFIYAT= 100;
+	private int toplamBilet;
+	
+	
+
+	private HashMap<String, Integer> biletler=new HashMap<>();
+
+	public  Map<String, Integer> biletListesi = new HashMap<>();
+	
+
+
+
+	
+
+	public EkonomiYolcu() {
+	}
+
+	public EkonomiYolcu(String ad, String soyad, boolean checkin) {
+		super(ad, soyad, checkin);
+	}
+
+	public int getEKONOMIFIYAT() {
+		return EKONOMIFIYAT;
+	}
+
+	public void setEKONOMIFIYAT(int eKONOMIFIYAT) {
+		EKONOMIFIYAT = eKONOMIFIYAT;
+	}
+
+
+	public int getToplamBilet() {
+		return toplamBilet;
+	}
+
+	public void setToplamBilet(int toplamBilet) {
+		this.toplamBilet = getBASEFIYAT()+EKONOMIFIYAT;
+	}
+	
+
+	@Override
+	void yolcuBilgileriniGetir() {
+		System.out.println("ad: "+getAd()+" soyad: "+getSoyad() );
+		System.out.println(biletListesi.toString());
+
+		
+	}
+
+	@Override
+	void biletAl(FirmaAdi firmaAdi) {
+		if(biletler.containsKey(firmaAdi.name())) {
+			setBilet(true);
+			this.toplamBilet +=  getBASEFIYAT() + this.EKONOMIFIYAT;
+			biletler.put(firmaAdi.name(), this.toplamBilet);
+			biletListesi.put(firmaAdi.name(), getKoltukNo());
+			System.out.println("Bilet alınmıştır. Bilet bilgileriniz " + biletler + " TL'dir.");
+		}else {
+			setBilet(true);
+			this.toplamBilet  = (int) (getBASEFIYAT() + this.EKONOMIFIYAT);
+			biletler.put(firmaAdi.name(),  this.toplamBilet);
+			biletListesi.put(firmaAdi.name(), getKoltukNo());
+			System.out.println("Bilet alınmıştır. Bilet bilgileriniz " + biletler + " TL'dir.");
+		}
+	}
+	@Override
+	void checkInYap() {
+		if(isBilet()&& isCheckin()) {
+			System.out.println("checkin zaten yapilmis");
+		}else if(isBilet() && isCheckin()==false) {
+		setCheckin(true);
+		System.out.println("checkin yapildi");
+
+		}
+		else if(isBilet()==false&& isCheckin()== false) {
+			System.out.println("önce bilet al");
+		}
+	}
+
+	@Override
+	void ucagaBin() {
+
+		if(isCheckin()) {
+			System.out.println("checkin yapilmis ucaga binebilirsiniz...");
+		}else {
+			System.out.println("checkin yapmadın binemessin");
+		}
+	}
+	
+	
+
+}

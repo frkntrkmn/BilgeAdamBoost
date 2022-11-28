@@ -1,0 +1,58 @@
+package maraton2;
+
+public class CustomStringTR {
+
+	
+	
+	public CustomStringTR(String str) {
+	}
+
+
+	public int uzunluk(String str) {
+		return str.length();
+	}
+
+
+	public int indexGetir(String str) {
+		return str.charAt(1);
+	}
+	
+	public boolean değerKontrol(String str) {
+		return str.contains("a");
+	}
+	
+	public boolean sonDeğerKontrol(String str) {
+		return str.endsWith("b");
+	}
+	
+	public int değerArama(String str) {
+		return str.indexOf("a");
+	}
+	
+	public int sonDeğerArama(String str) {
+		return str.lastIndexOf("c");
+	}
+	
+	public boolean bosMuKontrol(String str) {
+		return str.isEmpty();
+	}
+	
+	public String boslukSilme(String str) {
+		return str.strip();
+	}
+	
+	public String bölme(String str) {
+		return str.substring(1,3);
+	}
+	
+	public String büyükHarfYapma(String str) {
+		return str.toUpperCase();
+	}
+	public String kücükHarfYapma(String str) {
+		return str.toLowerCase();
+	}
+	public char[] charArrayCevirme(String str) {
+		return str.toCharArray();
+	}
+
+}

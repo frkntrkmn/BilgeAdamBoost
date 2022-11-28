@@ -1,0 +1,6 @@
+package maraton2.soru4;
+
+public class EkonomiYolcu  extends Yolcu{
+	private int EKONOMIFIYAT= 100;
+
+}

@@ -1,0 +1,88 @@
+package maraton2.soru4;
+
+import java.util.HashMap;
+
+public class EkonomiYolcu  extends Yolcu{
+	private int EKONOMIFIYAT= 100;
+	private int toplamBilet;
+	
+	
+
+	private HashMap<String, Integer> biletler=new HashMap<>();
+
+	
+	
+
+
+
+	
+
+	public EkonomiYolcu() {
+	}
+
+	public EkonomiYolcu(String ad, String soyad, boolean checkin) {
+		super(ad, soyad, checkin);
+	}
+
+	public int getEKONOMIFIYAT() {
+		return EKONOMIFIYAT;
+	}
+
+	public void setEKONOMIFIYAT(int eKONOMIFIYAT) {
+		EKONOMIFIYAT = eKONOMIFIYAT;
+	}
+
+
+	public int getToplamBilet() {
+		return toplamBilet;
+	}
+
+	public void setToplamBilet(int toplamBilet) {
+		this.toplamBilet = getBASEFIYAT()+EKONOMIFIYAT;
+	}
+	
+
+	@Override
+	void yolcuBilgileriniGetir() {
+		System.out.println("ad: "+getAd()+" soyad: "+getSoyad()+" koltuk no:" +getKoltukNo()+" firma: "+getFirma()+
+				" ücret "+ getToplamBilet());
+		
+	}
+
+	@Override
+	void biletAl(FirmaAdi firmaAdi) {
+		this.toplamBilet= getBASEFIYAT()+getEKONOMIFIYAT();
+		setFirma(firmaAdi);
+		setBilet(true);
+
+		biletler.put(firmaAdi.name(), toplamBilet);
+		System.out.println("bilet alindi");
+	}
+
+	@Override
+	void checkInYap() {
+		if(isBilet()&& isCheckin()) {
+			System.out.println("checkin zaten yapilmis");
+		}else if(isBilet() && isCheckin()==false) {
+		setCheckin(true);
+		System.out.println("checkin yapildi");
+
+		}
+		else if(isBilet()==false&& isCheckin()== false) {
+			System.out.println("önce bilet al");
+		}
+	}
+
+	@Override
+	void ucagaBin() {
+
+		if(isCheckin()) {
+			System.out.println("checkin yapilmis ucaga binebilirsiniz...");
+		}else {
+			System.out.println("checkin yapmadın binemessin");
+		}
+	}
+	
+	
+
+}

@@ -1,0 +1,11 @@
+package maraton2.soru3;
+
+public abstract class Surungen extends Hayvan {
+
+	@Override
+	void sesCikar() {
+		
+	}
+
+	abstract void surun();
+}

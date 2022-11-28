@@ -1,0 +1,19 @@
+package maraton2.soru2;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		CustomStringTR customStr = new CustomStringTR("merhaba");
+		System.out.println(customStr.uzunluk());
+		System.out.println(customStr.bosMuKontrol());
+		System.out.println(customStr.bölme());
+		System.out.println(customStr.değerArama());
+
+		
+	
+	
+	}
+
+	
+
+}

@@ -1,0 +1,26 @@
+package maraton2.soru4;
+
+public class EkonomiYolcu  extends Yolcu{
+	private int EKONOMIFIYAT= 100;
+	
+	
+	
+	
+
+	public EkonomiYolcu(int id, String ad, String soyad, boolean checkin, int eKONOMIFIYAT) {
+		super(id, ad, soyad, checkin);
+		EKONOMIFIYAT = eKONOMIFIYAT;
+	}
+
+	
+	public int getEKONOMIFIYAT() {
+		return EKONOMIFIYAT;
+	}
+
+	public void setEKONOMIFIYAT(int eKONOMIFIYAT) {
+		EKONOMIFIYAT = eKONOMIFIYAT;
+	}
+	
+	
+
+}

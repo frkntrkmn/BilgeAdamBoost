@@ -1,0 +1,28 @@
+package maraton2.soru3;
+
+public class Maymun extends MemeliHayvan{
+
+	
+	
+	
+	
+	public Maymun() {
+	}
+
+	public Maymun(String ad, int kilo, int uzunluk, boolean tehlikeliMi) {
+		super(ad, kilo, uzunluk, tehlikeliMi=true);
+	}
+
+	@Override
+	public void yuru() {
+		System.out.println("maymun yürüdü");
+		
+	}
+
+	@Override
+	public void sesCikar() {
+
+		System.out.println("maymun savas cigligi atti");
+	}
+
+}

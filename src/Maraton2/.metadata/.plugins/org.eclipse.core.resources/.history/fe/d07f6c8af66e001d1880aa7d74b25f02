@@ -1,0 +1,16 @@
+package maraton2.soru3;
+
+public class Maymun extends MemeliHayvan{
+
+	@Override
+	public void yuru() {
+		
+	}
+
+	@Override
+	public void sesCikar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

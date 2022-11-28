@@ -1,0 +1,71 @@
+package maraton2.soru4;
+
+import java.util.HashMap;
+
+public class EkonomiYolcu  extends Yolcu{
+	private int EKONOMIFIYAT= 100;
+	private int toplamBilet;
+	
+	
+
+	private HashMap<String, Integer> biletler;
+
+	
+	
+
+
+
+	
+
+	public EkonomiYolcu() {
+	}
+
+	public EkonomiYolcu(String ad, String soyad, boolean checkin) {
+		super(ad, soyad, checkin);
+		this.biletler = biletler;
+	}
+
+	public int getEKONOMIFIYAT() {
+		return EKONOMIFIYAT;
+	}
+
+	public void setEKONOMIFIYAT(int eKONOMIFIYAT) {
+		EKONOMIFIYAT = eKONOMIFIYAT;
+	}
+
+
+	public int getToplamBilet() {
+		return toplamBilet;
+	}
+
+	public void setToplamBilet(int toplamBilet) {
+		this.toplamBilet = getBASEFIYAT()+EKONOMIFIYAT;
+	}
+	
+
+	@Override
+	void yolcuBilgileriniGetir() {
+		System.out.println("ad: "+getAd()+" soyad: "+getSoyad()+" koltuk no:" +getKoltukNo()+" firma: "+getFirma());
+		
+	}
+
+	@Override
+	void biletAl(FirmaAdi firmaAdi) {
+		setFirma(firmaAdi);
+		System.out.println("bilet alindi");
+	}
+
+	@Override
+	void checkInYap() {
+		
+	}
+
+	@Override
+	void ucagaBin() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+
+}

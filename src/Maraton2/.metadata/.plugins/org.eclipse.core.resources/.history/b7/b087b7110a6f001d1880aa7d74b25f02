@@ -1,0 +1,33 @@
+package maraton2.soru4;
+
+public class BusinessYolcu extends Yolcu{
+	
+	private int BUSINNESFIYAT = 200;
+	private int BUSINNESVIPFIYAT = 150;
+	
+	
+	
+	
+	
+	public BusinessYolcu() {
+	}
+	public BusinessYolcu(int id, String ad, String soyad, boolean checkin ) {
+		super( ad, soyad,  checkin);
+		
+	}
+	public int getBUSINNESFIYAT() {
+		return BUSINNESFIYAT;
+	}
+	public void setBUSINNESFIYAT(int bUSINNESFIYAT) {
+		BUSINNESFIYAT = bUSINNESFIYAT;
+	}
+	public int getBUSINNESVIPFIYAT() {
+		return BUSINNESVIPFIYAT;
+	}
+	public void setBUSINNESVIPFIYAT(int bUSINNESVIPFIYAT) {
+		BUSINNESVIPFIYAT = bUSINNESVIPFIYAT;
+	}
+	
+	
+
+}

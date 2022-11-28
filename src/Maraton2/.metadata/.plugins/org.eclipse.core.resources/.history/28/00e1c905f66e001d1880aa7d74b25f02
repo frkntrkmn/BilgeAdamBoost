@@ -1,0 +1,21 @@
+package maraton2.soru3;
+
+public class Aslan extends MemeliHayvan {
+
+	@Override
+	public void yuru() {
+		System.out.println("asd");
+		
+	}
+	
+	
+	@Override
+	public void sesCikar() {
+		
+	}
+
+	
+
+	
+
+}

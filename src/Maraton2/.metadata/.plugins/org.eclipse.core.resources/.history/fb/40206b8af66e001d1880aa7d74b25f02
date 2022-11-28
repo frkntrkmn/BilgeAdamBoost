@@ -1,0 +1,15 @@
+package maraton2.soru3;
+
+public class Yılan extends Surungen{
+
+	@Override
+	public void surun() {
+		
+	}
+
+	@Override
+	public void sesCikar() {
+		
+	}
+
+}

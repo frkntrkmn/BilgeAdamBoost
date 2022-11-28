@@ -1,0 +1,65 @@
+package maraton2.soru4;
+
+public class BusinessYolcu extends Yolcu{
+	
+	private int BUSINNESFIYAT = 200;
+	private int BUSINNESVIPFIYAT = 150;
+	
+	
+	
+	
+	
+	public BusinessYolcu() {
+	}
+
+	
+	public BusinessYolcu(String ad, String soyad, boolean checkin, int bUSINNESFIYAT, int bUSINNESVIPFIYAT, FirmaAdi firma) {
+		super(ad, soyad, checkin,firma);
+		BUSINNESFIYAT = bUSINNESFIYAT;
+		BUSINNESVIPFIYAT = bUSINNESVIPFIYAT;
+	}
+
+
+	public int getBUSINNESFIYAT() {
+		return BUSINNESFIYAT;
+	}
+	public void setBUSINNESFIYAT(int bUSINNESFIYAT) {
+		BUSINNESFIYAT = bUSINNESFIYAT;
+	}
+	public int getBUSINNESVIPFIYAT() {
+		return BUSINNESVIPFIYAT;
+	}
+	public void setBUSINNESVIPFIYAT(int bUSINNESVIPFIYAT) {
+		BUSINNESVIPFIYAT = bUSINNESVIPFIYAT;
+	}
+
+
+	@Override
+	void yolcuBilgileriniGetir() {
+		
+	}
+
+
+	@Override
+	void biletAl(FirmaAdi firmaAdi) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	void checkInYap() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	void ucagaBin() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+
+}

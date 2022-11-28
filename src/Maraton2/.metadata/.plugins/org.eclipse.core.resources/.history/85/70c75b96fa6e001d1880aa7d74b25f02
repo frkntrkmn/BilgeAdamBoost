@@ -1,0 +1,10 @@
+package maraton2.soru3;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Hayvan yilans= new Yılan(null, 0, 0, false)
+	}
+
+}

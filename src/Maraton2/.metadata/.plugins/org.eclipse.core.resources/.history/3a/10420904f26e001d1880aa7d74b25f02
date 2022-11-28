@@ -1,0 +1,11 @@
+package maraton2;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		CustomStringTR customStr = new CustomStringTR("merhaba");
+		System.out.println(customStr.uzunluk());}
+
+	
+
+}

@@ -1,0 +1,25 @@
+package maraton2.soru4;
+
+public class Main {
+public static void main(String[] args) {
+	
+	System.out.println("------EKONOMİ-------");
+	EkonomiYolcu yolcu= new EkonomiYolcu("asd","xxx",false);
+	yolcu.biletAl(FirmaAdi.ANADOLUJEY);
+	yolcu.biletAl(FirmaAdi.PEGASUS);
+	yolcu.yolcuBilgileriniGetir();
+	yolcu.checkInYap();
+	yolcu.ucagaBin();
+	
+	
+	System.out.println("------BUSİNESS-------");
+
+	Yolcu yolcu2= new BusinessYolcu("ads","vvxvxvxv",false,true);
+	yolcu2.biletAl(FirmaAdi.PEGASUS);
+	yolcu2.checkInYap();
+	yolcu2.yolcuBilgileriniGetir();
+	yolcu2.ucagaBin();
+
+
+}
+}

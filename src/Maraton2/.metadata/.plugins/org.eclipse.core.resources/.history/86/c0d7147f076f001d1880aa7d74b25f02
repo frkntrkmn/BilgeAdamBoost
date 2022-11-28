@@ -1,0 +1,67 @@
+package maraton2.soru3;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+public class HayvanatBahcesi {
+	
+	
+		Db db= new Db();
+	
+	  List<Hayvan> list = new ArrayList(db.hayvanlar.keySet());
+		
+	  Map<String, Integer> adList = list.stream().collect(Collectors.toMap(a -> a.getAd(), a -> a.getKilo()));
+	  
+	public void bahceyeMemeliHayvanEkle(MemeliHayvan m) {
+		
+	
+		
+        
+		if(adList.containsKey(m.getAd())) {
+			
+			System.out.println("bu memeliden var zaten");
+			
+		}else {		
+			list.add(m);
+
+		}
+	}
+	
+	
+	public void bahceyeSurungenEkle(Surungen s) {
+
+		
+		if(adList.containsKey(s.getAd())) {
+			
+			System.out.println("surungen zaten var");
+			
+			
+		}else {
+			list.add(s);
+
+		}
+
+	}
+	
+	
+	public void hayvanSesCikarsin(Hayvan h) {
+		
+	}
+	
+	public void hayvaninCinsiniBul(String hayvanAdi) {
+		
+	}
+	
+	public void hayvaninBilgileriniYazdir(String hayvanAdi){
+	
+		
+	}
+	
+	public void hayvaniHareketEttir(String hayvanAdi) {
+		
+	}
+
+}

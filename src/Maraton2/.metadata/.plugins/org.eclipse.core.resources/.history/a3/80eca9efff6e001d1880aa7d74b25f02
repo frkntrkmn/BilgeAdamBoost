@@ -1,0 +1,60 @@
+package maraton2.soru3;
+
+public abstract class Hayvan {
+
+	private String ad;
+	private int kilo;
+	private int uzunluk;
+	private boolean tehlikeliMi;
+	
+	
+	public abstract void sesCikar();
+	
+	
+	public Hayvan(String ad, int kilo, int uzunluk) {
+		this.ad = ad;
+		this.kilo = kilo;
+		this.uzunluk = uzunluk;
+	}
+	
+	
+	
+	public Hayvan() {
+	}
+
+
+
+	public String getAd() {
+		return ad;
+	}
+	public void setAd(String ad) {
+		this.ad = ad;
+	}
+	public int getKilo() {
+		return kilo;
+	}
+	public void setKilo(int kilo) {
+		this.kilo = kilo;
+	}
+	public int getUzunluk() {
+		return uzunluk;
+	}
+	public void setUzunluk(int uzunluk) {
+		this.uzunluk = uzunluk;
+	}
+	public boolean isTehlikeliMi() {
+		return tehlikeliMi;
+	}
+	public void setTehlikeliMi(boolean tehlikeliMi) {
+		this.tehlikeliMi = tehlikeliMi;
+	}
+
+
+	void yuru() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	
+}

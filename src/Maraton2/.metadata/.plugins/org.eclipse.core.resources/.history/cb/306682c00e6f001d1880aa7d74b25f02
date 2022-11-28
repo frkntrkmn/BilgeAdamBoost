@@ -1,0 +1,10 @@
+package maraton2.soru4;
+
+public class Main {
+public static void main(String[] args) {
+	
+	EkonomiYolcu yolcu= new EkonomiYolcu("asd","xxx",false);
+	yolcu.yolcuBilgileriniGetir();
+	yolcu.biletAl(FirmaAdi.ANADOLUJEY);
+}
+}

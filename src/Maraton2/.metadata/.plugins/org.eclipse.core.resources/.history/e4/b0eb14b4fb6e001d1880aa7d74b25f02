@@ -1,0 +1,41 @@
+package maraton2.soru3;
+
+import java.util.HashMap;
+
+public class HayvanatBahcesi {
+	
+	HashMap<Hayvan, Integer> hayvanlar =new HashMap<>();
+	
+	public void bahceyeMemeliHayvanEkle(MemeliHayvan m) {
+		hayvanlar.put(m, 1);
+	}
+	
+	
+	public void bahceyeSurungenEkle(Surungen s) {
+		if(hayvanlar.containsKey(s.getAd())) {
+			System.out.println("hayvan zaten var");
+		}else {
+			hayvanlar.put(s, 2);
+
+		}
+
+	}
+	
+	
+	public void hayvanSesCikarsin(Hayvan h) {
+		
+	}
+	
+	public void hayvaninCinsiniBul(String hayvanAdi) {
+		
+	}
+	
+	public void hayvaninBilgileriniYazdir(String hayvanAdi){
+		
+	}
+	
+	public void hayvaniHareketEttir(String hayvanAdi) {
+		
+	}
+
+}

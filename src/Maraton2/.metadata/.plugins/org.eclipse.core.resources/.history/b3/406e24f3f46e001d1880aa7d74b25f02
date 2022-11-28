@@ -1,0 +1,12 @@
+package maraton2.soru3;
+
+public class Aslan extends MemeliHayvan {
+
+	@Override
+	void yuru() {
+		
+	}
+
+	
+
+}

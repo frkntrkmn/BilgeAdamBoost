@@ -1,0 +1,41 @@
+package maraton2.soru3;
+
+public class Aslan extends MemeliHayvan {
+
+	
+	
+	
+	
+	public Aslan() {
+	}
+
+
+	public Aslan(String ad, int kilo, int uzunluk) {
+		super(ad, kilo, uzunluk );
+	}
+
+
+	@Override
+	public void yuru() {
+		System.out.println("aslan yürüdü");
+		
+	}
+	
+	
+	@Override
+	public void sesCikar() {
+		System.out.println("aslan kükredi");
+	}
+
+
+	@Override
+	public String toString() {
+		return "Aslan [getAd()=" + getAd() + ", getKilo()=" + getKilo() + ", getUzunluk()=" + getUzunluk()
+				+ ", isTehlikeliMi()=" + isTehlikeliMi() + "]";
+	}
+
+	
+
+	
+
+}

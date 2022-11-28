@@ -1,0 +1,58 @@
+package maraton2.soru3;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map.Entry;
+
+public class HayvanatBahcesi {
+	
+	public static HashMap<Hayvan, String> hayvanlar =new HashMap<>();
+	
+	public void bahceyeMemeliHayvanEkle(MemeliHayvan m) {
+		
+		if(hayvanlar.containsKey(m.getAd())) {
+			
+			System.out.println("bu memeliden var zaten");
+			
+		}else {
+			hayvanlar.put(m, "memeli");
+		}
+	}
+	
+	
+	public void bahceyeSurungenEkle(Surungen s) {
+		List<Hayvan> list = new ArrayList(hayvanlar.keySet());
+
+		String ad= list.stream().filter(a->a.getAd());
+		
+		if(s.getAd()==list.stream().filter(a->a.getAd())) {
+			
+			System.out.println("hayvan zaten var");
+			
+			
+		}else {
+			hayvanlar.put(s, "surungen");
+
+		}
+
+	}
+	
+	
+	public void hayvanSesCikarsin(Hayvan h) {
+		
+	}
+	
+	public void hayvaninCinsiniBul(String hayvanAdi) {
+		
+	}
+	
+	public void hayvaninBilgileriniYazdir(String hayvanAdi){
+		
+	}
+	
+	public void hayvaniHareketEttir(String hayvanAdi) {
+		
+	}
+
+}

@@ -1,0 +1,96 @@
+package maraton2.soru4;
+
+import java.util.HashMap;
+
+public class BusinessYolcu extends Yolcu{
+	
+	private int BUSINNESFIYAT = 200;
+	private int BUSINNESVIPFIYAT = 150;
+	private int toplamFiyat;
+	private HashMap<String, Integer> biletler;
+
+	
+	
+	
+	public BusinessYolcu() {
+	}
+
+	
+	public BusinessYolcu(String ad, String soyad, boolean checkin, int bUSINNESFIYAT, int bUSINNESVIPFIYAT, FirmaAdi firma) {
+		super(ad, soyad, checkin,firma);
+		BUSINNESFIYAT = bUSINNESFIYAT;
+		BUSINNESVIPFIYAT = bUSINNESVIPFIYAT;
+	}
+
+
+	public int getBUSINNESFIYAT() {
+		return BUSINNESFIYAT;
+	}
+	public void setBUSINNESFIYAT(int bUSINNESFIYAT) {
+		BUSINNESFIYAT = bUSINNESFIYAT;
+	}
+	public int getBUSINNESVIPFIYAT() {
+		return BUSINNESVIPFIYAT;
+	}
+	public void setBUSINNESVIPFIYAT(int bUSINNESVIPFIYAT) {
+		BUSINNESVIPFIYAT = bUSINNESVIPFIYAT;
+	}
+	
+	
+	
+	
+
+
+	public int getToplamFiyat() {
+		return toplamFiyat;
+	}
+
+
+	public void setToplamFiyat(int toplamFiyat) {
+		this.toplamFiyat = toplamFiyat;
+	}
+
+
+	public HashMap<String, Integer> getBiletler() {
+		return biletler;
+	}
+
+
+	public void setBiletler(HashMap<String, Integer> biletler) {
+		this.biletler = biletler;
+	}
+
+	
+	
+
+	@Override
+	void yolcuBilgileriniGetir() {
+		System.out.println("ad: "+getAd()+" soyad: "+getSoyad()+" koltuk no:" +getKoltukNo()+" firma: "+getFirma());
+
+		
+	}
+
+
+	@Override
+	void biletAl(FirmaAdi firmaAdi) {
+		biletler.put(firmaAdi.name(), getToplamFiyat());
+		System.out.println("bilet alindi");		
+	}
+
+
+	@Override
+	void checkInYap() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	void ucagaBin() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+
+}

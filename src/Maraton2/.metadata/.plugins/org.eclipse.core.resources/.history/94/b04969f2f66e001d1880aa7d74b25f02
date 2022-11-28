@@ -1,0 +1,17 @@
+package maraton2.soru3;
+
+public class Maymun extends MemeliHayvan{
+
+	@Override
+	public void yuru() {
+		System.out.println("maymun yürüdü");
+		
+	}
+
+	@Override
+	public void sesCikar() {
+
+		System.out.println("maymun savas cigligi atti");
+	}
+
+}

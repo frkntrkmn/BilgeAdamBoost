@@ -1,0 +1,29 @@
+package maraton2.soru3;
+
+public class Kertenkele extends Surungen {
+
+	
+	
+	
+	
+	public Kertenkele() {
+		super();
+	}
+
+	public Kertenkele(String ad, int kilo, int uzunluk, boolean tehlikeliMi) {
+		super(ad, kilo, uzunluk, tehlikeliMi);
+	}
+
+	@Override
+	public void surun() {
+		System.out.println("kertenkele surundu");
+		
+	}
+
+	@Override
+	public void sesCikar() {
+
+		System.out.println("kertenkele ses cikardi");
+	}
+
+}
